@@ -1,0 +1,18 @@
+<div class="row" >
+    <!-- left menu -->
+    <div class="col-md-3">
+        <div class="list-group">
+            <a class="list-group-item" ng-class="{active: $state.includes('*.writing') || $state.includes('*.writing.*')}" ui-sref=".writing">写作</a>
+            <a class="list-group-item" ng-class="{active: $state.includes('*.listening') || $state.includes('*.listening.*')}" ui-sref=".listening">听力</a>
+            <a class="list-group-item" ng-class="{active: $state.includes('*.listening-blank') || $state.includes('*.listening-blank.*')}" ui-sref=".listening-blank">听力填空</a>
+            <a class="list-group-item" ng-class="{active: $state.includes('*.cloze') || $state.includes('*.cloze.*')}" ui-sref=".cloze">完型填空</a>
+            <a class="list-group-item" ng-class="{active: $state.includes('*.reading-derive') || $state.includes('*.reading-derive.*')}" ui-sref=".reading-derive">阅读推导</a>
+            <a class="list-group-item" ng-class="{active: $state.includes('*.reading') || $state.includes('*.reading.*')}" ui-sref=".reading">阅读理解</a>
+            <a class="list-group-item" ng-class="{active: $state.includes('*.translation') || $state.includes('*.translation.*')}" ui-sref=".translation">翻译</a>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="col-md-9">
+        <div class="row" ui-view></div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+<!-- 阅读理解 -->
+<div class="col-md-12" ng-controller="ReadingController">
+    <div class="row">
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-5">
+                    <h3>阅读理解</h3>
+                </div>
+                <div class="col-sm-5">
+                    <a role="button" class="btn btn-danger pull-right" ng-click="save()">保存</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">四六级 :</label>
+                <div class="col-sm-6">
+                    <a role="button" class="btn btn-info" ng-class="{'CET4': 'btn-info', 'CET6': 'btn-default'}[reading.examType]">四  级</a>
+                    <a role="button" class="btn btn-default" ng-class="{'CET6': 'btn-info', 'CET4': 'btn-default'}[reading.examType]">六  级</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="year" class="col-sm-2 control-label">年份 :</label>
+                <div class="col-sm-3">
+                    <input type="text" id="year" ng-model="reading.year" class="year form-control" placeholder="请选择年份">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">月份 :</label>
+                <div class="col-sm-6">
+                    <a role="button" class="btn btn-info" ng-class="{'6': 'btn-info', '12': 'btn-default'}[reading.month]">  6 月  </a>
+                    <a role="button" class="btn btn-default" ng-class="{'12': 'btn-info', '6': 'btn-default'}[reading.month]">  12月  </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="reading_content" class="col-sm-2 control-label">题干 :</label>
+                <div class="col-sm-10">
+                    <textarea rows="8" id="reading_content" ng-model="reading.article" class="form-control" placeholder="请输入阅读理解题的题干"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="reading_" class="col-sm-2 control-label">选项 :</label>
+                <div class="col-sm-10">
+                    <input rows="8" id="reading_" class="form-control" placeholder="请输入阅读理解题的问题" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12 form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-2"></div>
+                    <label for="reading_A" class="col-sm-1 control-label">A :</label>
+                    <div class="col-sm-9">
+                        <input rows="8" id="reading_A" class="form-control" placeholder="请输入选项A" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-2"></div>
+                    <label for="reading_B" class="col-sm-1 control-label">B :</label>
+                    <div class="col-sm-9">
+                        <input rows="8" id="reading_B" class="form-control" placeholder="请输入选项B" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-2"></div>
+                    <label for="reading_C" class="col-sm-1 control-label">C :</label>
+                    <div class="col-sm-9">
+                        <input rows="8" id="reading_C" class="form-control" placeholder="请输入选项C" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-2"></div>
+                    <label for="reading_D" class="col-sm-1 control-label">D :</label>
+                    <div class="col-sm-9">
+                        <input rows="8" id="reading_D" class="form-control" placeholder="请输入选项D" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 form-horizontal">
+                <div class="form-group">
+                    <label for="reading_analysis" class="col-sm-2 control-label">分析 :</label>
+                    <div class="col-sm-10">
+                        <textarea rows="2" id="reading_analysis" ng-model="reading.analysis" class="form-control" placeholder="请输入此题的解析"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="reading_analysis" class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <a role="button" class="btn btn-primary">增加选项</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">知识点 :</label>
+                <div class="col-sm-10">
+                    <a role="button" class="btn btn-info knowlege_choose">选择知识点</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

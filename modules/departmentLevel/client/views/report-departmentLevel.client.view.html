@@ -1,0 +1,10 @@
+<section ng-controller="DepartmentLevelController" ng-init="find()">
+  <div class="col-md-12">
+    <select class="" ng-model="departmentName" ng-change="queryByDeptNo()"
+            ng-options="department.XYJC for department in departments" >
+    </select>
+  </div>
+  <div class="page-header">
+    <highchart id="chart1" config="chartConfig"></highchart>
+  </div>
+</section>

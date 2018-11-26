@@ -1,0 +1,97 @@
+<!-- 听力 -->
+<div class="col-md-12" ng-controller="ListeningController">
+    <div class="row">
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-5">
+                    <h3>听力</h3>
+                </div>
+                <div class="col-sm-5">
+                    <a role="button" class="btn btn-danger pull-right" ng-click="save()">保存</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">四六级 :</label>
+                <div class="col-sm-6">
+                    <a role="button" class="btn btn-info" ng-class="{'CET4': 'btn-info', 'CET6': 'btn-default'}[listening.examType]">四  级</a>
+                    <a role="button" class="btn btn-default" ng-class="{'CET6': 'btn-info', 'CET4': 'btn-default'}[listening.examType]">六  级</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="year" class="col-sm-2 control-label">年份 :</label>
+                <div class="col-sm-3">
+                    <input type="text" id="year" ng-model="listening.year" class="year form-control" placeholder="请选择年份">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">月份 :</label>
+                <div class="col-sm-6">
+                    <a role="button" class="btn btn-info" ng-class="{'6': 'btn-info', '12': 'btn-default'}[listening.month]">  6 月  </a>
+                    <a role="button" class="btn btn-default" ng-class="{'12': 'btn-info', '6': 'btn-default'}[listening.month]">  12月  </a>
+                </div>
+            </div>
+        </div>
+      <div class="col-md-12 form-horizontal">
+        <div class="form-group">
+          <label for="listening_A" class="col-sm-2 control-label">A :</label>
+          <div class="col-sm-10">
+            <input id="listening_A" ng-model="listening.options.A" class="form-control" placeholder="请输入选项A" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 form-horizontal">
+        <div class="form-group">
+          <label for="listening_B" class="col-sm-2 control-label">B :</label>
+          <div class="col-sm-10">
+            <input id="listening_B" ng-model="listening.options.B" class="form-control" placeholder="请输入选项B" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 form-horizontal">
+        <div class="form-group">
+          <label for="listening_C" class="col-sm-2 control-label">C :</label>
+          <div class="col-sm-10">
+            <input id="listening_C" ng-model="listening.options.C" class="form-control" placeholder="请输入选项C" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 form-horizontal">
+        <div class="form-group">
+          <label for="listening_D" class="col-sm-2 control-label">D :</label>
+          <div class="col-sm-10">
+            <input id="listening_D" ng-model="listening.options.D" class="form-control" placeholder="请输入选项D" />
+          </div>
+        </div>
+      </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="writing_analysis" class="col-sm-2 control-label">分析 :</label>
+                <div class="col-sm-10">
+                    <textarea rows="2" id="writing_analysis" ng-model="listening.analysis" class="form-control" placeholder="请输入此题的解析"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">知识点 :</label>
+                <div class="col-sm-10">
+                    <a role="button" class="btn btn-info knowlege_choose">选择知识点</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<!-- 翻译 -->
+<div class="col-md-12" ng-controller="TranslationController">
+    <div class="row">
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-5">
+                    <h3>翻译</h3>
+                </div>
+                <div class="col-sm-5">
+                    <a role="button" class="btn btn-danger pull-right" ng-click="save()">保存</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">四六级 :</label>
+                <div class="col-sm-6">
+                    <a role="button" class="btn btn-info" ng-class="{'CET4': 'btn-info', 'CET6': 'btn-default'}[translation.examType]">四  级</a>
+                    <a role="button" class="btn btn-default" ng-class="{'CET6': 'btn-info', 'CET4': 'btn-default'}[translation.examType]">六  级</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="year" class="col-sm-2 control-label">年份 :</label>
+                <div class="col-sm-3">
+                    <input type="text" id="year" ng-model="translation.year" class="year form-control" placeholder="请选择年份">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">月份 :</label>
+                <div class="col-sm-6">
+                    <a role="button" class="btn btn-info" ng-class="{'6': 'btn-info', '12': 'btn-default'}[translation.month]">  6 月  </a>
+                    <a role="button" class="btn btn-default" ng-class="{'12': 'btn-info', '6': 'btn-default'}[translation.month]">  12月  </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="translation_content" class="col-sm-2 control-label">题干 :</label>
+                <div class="col-sm-10">
+                    <textarea rows="5" id="translation_content" ng-model="translation.article" class="form-control" placeholder="请输入翻译题的题干"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="translation_analysis" class="col-sm-2 control-label">分析 :</label>
+                <div class="col-sm-10">
+                    <textarea rows="2" id="translation_analysis" ng-model="translation.analysis" class="form-control" placeholder="请输入此题的解析"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label for="translation_referAnswer" class="col-sm-2 control-label">参考答案 :</label>
+                <div class="col-sm-10">
+                    <textarea rows="3" id="translation_referAnswer" ng-model="translation.referAnswer" class="form-control" placeholder="请输入此题的参考答案"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">知识点 :</label>
+                <div class="col-sm-10">
+                    <a role="button" class="btn btn-info knowlege_choose">选择知识点</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
